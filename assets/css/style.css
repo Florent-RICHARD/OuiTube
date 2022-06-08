@@ -1,0 +1,78 @@
+/******************************* HEADER TOP *******************************/
+header{
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+header .header-icon{
+    padding-left: 10px;
+}
+
+header .header-icon:hover i{
+    color: red;
+}
+
+header .header-top-center input{
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+header .header-top-center i{
+    border: 0.1px solid #ccc;
+    background-color: #efefef;
+    padding: 9px;
+}
+
+header .header-top-right i{
+    font-size: 1.8rem;
+}
+
+header .header-top-right i:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+.logo img.logo-large{
+    width: 150px;
+    height: 50px;
+}
+
+.logo img:nth-child(2){
+    display: none;
+    width: 50;
+    height: 50px;
+}
+
+/******************************* HEADER LEFT *******************************/
+header .header-left{
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    z-index: 9999;
+    display: none;
+}
+
+header .header-left a{
+    display: block;
+    padding: 20px 5px;
+}
+header .header-left li:hover{
+    background-color: #efefef;
+    font-weight: bold;
+}
+
+@media screen and (max-width : 650px) {
+    .logo img:nth-child(1){
+        display: none;
+    }
+    
+    .logo img:nth-child(2){
+        display: block;
+    }
+
+    header .header-left{
+        width: 100%;
+    }
+}
